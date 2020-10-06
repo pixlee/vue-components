@@ -258,7 +258,17 @@ var script$1 = {
     text: {
       type: String,
       default: "Enter Button Text Here"
+    },
+    btnClickHandler: {
+      type: Function
     }
+  },
+  methods: {
+    click() {
+      console.log(this);
+      this.btnClickHandler(this.text);
+    }
+
   },
 
   data() {}
@@ -277,7 +287,10 @@ var __vue_render__$1 = function () {
   var _c = _vm._self._c || _h;
 
   return _c('button', {
-    staticClass: "btn-cta"
+    staticClass: "btn-cta",
+    on: {
+      "click": _vm.click
+    }
   }, [_vm._v(_vm._s(_vm.text))]);
 };
 
@@ -286,7 +299,7 @@ var __vue_staticRenderFns__$1 = [];
 
 const __vue_inject_styles__$1 = function (inject) {
   if (!inject) return;
-  inject("data-v-0d377083_0", {
+  inject("data-v-71696f15_0", {
     source: ".btn-cta{background-color:#d0d0d5;border-width:3px;border-color:#1b1b32;border-radius:0;border-style:solid;color:#1b1b32;display:block;margin-bottom:0;font-weight:400;text-align:center;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;white-space:nowrap;padding:6px 12px;font-size:18px;line-height:1.42857143}.btn-cta:active:hover,.btn-cta:focus,.btn-cta:hover{background-color:#1b1b32;border-width:3px;border-color:#000;background-image:none;color:#f5f6f7}",
     map: undefined,
     media: undefined
