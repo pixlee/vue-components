@@ -14,6 +14,6 @@ export default Vue.extend({
 <template>
   <div id="app">
     <vue-components-sample />
-    <vue-button :btnClickHandler="() => {}"></vue-button>
+    <vue-button></vue-button>
   </div>
 </template>

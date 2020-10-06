@@ -9,15 +9,13 @@ export default {
     text: {
       type: String,
       default: "Enter Button Text Here"
-    },
-    btnClickHandler: {
-      type: Function
     }
   },
   methods: {
     click() {
+      console.log('inside vue button');
       console.log(this);
-      this.btnClickHandler(this.text);
+      this.$emit('clicked');
     }
   },
   data() {}
