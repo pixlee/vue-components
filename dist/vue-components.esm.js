@@ -322,12 +322,122 @@ const __vue_component__$1 = /*#__PURE__*/normalizeComponent({
   staticRenderFns: __vue_staticRenderFns__$1
 }, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, createInjector, undefined, undefined);
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var script$2 = {
+  name: "VueTable",
+  // vue component name
+  props: {
+    items: {
+      type: Array,
+      default: []
+    }
+  },
+  methods: {
+    onClick: function (item) {
+      console.log(item);
+      this.$emit('row-clicked', {
+        item
+      });
+    }
+  },
+
+  data() {}
+
+};
+
+/* script */
+const __vue_script__$2 = script$2;
+/* template */
+
+var __vue_render__$2 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('table', [_vm._m(0), _vm._v(" "), _c('tbody', [!_vm.items.length ? _c('tr', [_c('td', {
+    attrs: {
+      "colspan": "3"
+    }
+  }, [_vm._v("Nothing to display")])]) : _vm._e(), _vm._v(" "), _vm._l(_vm.items, function (item) {
+    return _c('tr', {
+      key: item.id,
+      on: {
+        "click": function ($event) {
+          return _vm.onClick(item);
+        }
+      }
+    }, [_c('td', [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.age))]), _vm._v(" "), _c('td', [_vm._v(_vm._s(item.job))])]);
+  })], 2)]);
+};
+
+var __vue_staticRenderFns__$2 = [function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c('thead', [_c('tr', [_c('th', [_vm._v("Name")]), _vm._v(" "), _c('th', [_vm._v("Age")]), _vm._v(" "), _c('th', [_vm._v("Occupation")])])]);
+}];
+/* style */
+
+const __vue_inject_styles__$2 = function (inject) {
+  if (!inject) return;
+  inject("data-v-2aea4b48_0", {
+    source: "table[data-v-2aea4b48]{border-collapse:collapse;text-align:center;table-layout:auto;width:100%}thead[data-v-2aea4b48]{color:#fff;background-color:#b7adff}th[data-v-2aea4b48]{padding:1rem .7rem;text-align:center}tr[data-v-2aea4b48]{box-shadow:0 0 1px 0 rgba(0,0,0,.2)}td[data-v-2aea4b48]{padding:1rem .7rem;text-align:center}",
+    map: undefined,
+    media: undefined
+  });
+};
+/* scoped */
+
+
+const __vue_scope_id__$2 = "data-v-2aea4b48";
+/* module identifier */
+
+const __vue_module_identifier__$2 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$2 = false;
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$2 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$2,
+  staticRenderFns: __vue_staticRenderFns__$2
+}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, createInjector, undefined, undefined);
+
 /* eslint-disable import/prefer-default-export */
 
 var components = /*#__PURE__*/Object.freeze({
   __proto__: null,
   VueComponentsSample: __vue_component__,
-  VueButton: __vue_component__$1
+  VueButton: __vue_component__$1,
+  VueTable: __vue_component__$2
 });
 
 // Import vue components
@@ -346,4 +456,4 @@ const plugin = {
 }; // To auto-install on non-es builds, when vue is found
 
 export default plugin;
-export { __vue_component__$1 as VueButton, __vue_component__ as VueComponentsSample };
+export { __vue_component__$1 as VueButton, __vue_component__ as VueComponentsSample, __vue_component__$2 as VueTable };

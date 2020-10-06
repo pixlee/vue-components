@@ -1,12 +1,13 @@
 <script>
 import Vue from 'vue';
-import { VueComponentsSample, VueButton } from '@/entry';
+import { VueComponentsSample, VueButton, VueTable } from '@/entry';
 
 export default Vue.extend({
   name: 'ServeDev',
   components: {
     VueComponentsSample,
-    VueButton
+    VueButton,
+    VueTable
   }
 });
 </script>
@@ -15,5 +16,6 @@ export default Vue.extend({
   <div id="app">
     <vue-components-sample />
     <vue-button></vue-button>
+    <vue-table></vue-table>
   </div>
 </template>

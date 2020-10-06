@@ -4,3 +4,5 @@ export {
     default as VueButton
 }
 from './vue-button.vue';
+
+export { default as VueTable } from './vue-table.vue';
