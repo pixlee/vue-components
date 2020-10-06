@@ -1,5 +1,5 @@
 <template>
-  <button class="btn-cta">{{ text }}</button>
+  <button class="btn-cta" @click="click">{{ text }}</button>
 </template>
 
 <script>
@@ -9,6 +9,15 @@ export default {
     text: {
       type: String,
       default: "Enter Button Text Here"
+    },
+    btnClickHandler: {
+      type: Function
+    }
+  },
+  methods: {
+    click() {
+      console.log(this);
+      this.btnClickHandler(this.text);
     }
   },
   data() {}
