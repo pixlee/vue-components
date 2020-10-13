@@ -350,7 +350,7 @@ var script$2 = {
   props: {
     items: {
       type: Array,
-      default: []
+      default: () => []
     }
   },
   methods: {
@@ -406,8 +406,8 @@ var __vue_staticRenderFns__$2 = [function () {
 
 const __vue_inject_styles__$2 = function (inject) {
   if (!inject) return;
-  inject("data-v-2aea4b48_0", {
-    source: "table[data-v-2aea4b48]{border-collapse:collapse;text-align:center;table-layout:auto;width:100%}thead[data-v-2aea4b48]{color:#fff;background-color:#b7adff}th[data-v-2aea4b48]{padding:1rem .7rem;text-align:center}tr[data-v-2aea4b48]{box-shadow:0 0 1px 0 rgba(0,0,0,.2)}td[data-v-2aea4b48]{padding:1rem .7rem;text-align:center}",
+  inject("data-v-b53a47c8_0", {
+    source: "table[data-v-b53a47c8]{border-collapse:collapse;text-align:center;table-layout:auto;width:100%}thead[data-v-b53a47c8]{color:#fff;background-color:#b7adff}th[data-v-b53a47c8]{padding:1rem .7rem;text-align:center}tr[data-v-b53a47c8]{box-shadow:0 0 1px 0 rgba(0,0,0,.2)}td[data-v-b53a47c8]{padding:1rem .7rem;text-align:center}",
     map: undefined,
     media: undefined
   });
@@ -415,7 +415,7 @@ const __vue_inject_styles__$2 = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__$2 = "data-v-2aea4b48";
+const __vue_scope_id__$2 = "data-v-b53a47c8";
 /* module identifier */
 
 const __vue_module_identifier__$2 = undefined;
