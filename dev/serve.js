@@ -9,6 +9,7 @@ new Vue({
   render: (h) => h(Dev),
 }).$mount('#app');
 
+
 // new Vue({
 //   render: (h) => h(Button, {
 //     props: {
@@ -22,14 +23,15 @@ new Vue({
 //   }),
 // }).$mount('#app');
 
-// new Vue({
+// var items = [{
+//   name: 'john',
+//   age: 14,
+//   job: 'coder'
+// }];
+// var x = new Vue({
 //   render: (h) => h(Table, {
 //     props: {
-//       items: [{
-//         name: 'john',
-//         age: 14,
-//         job: 'coder'
-//       }]
+//       items
 //     },
 //     on : {
 //       "row-clicked": (x) => {
@@ -38,3 +40,8 @@ new Vue({
 //     }
 //   }),
 // }).$mount('#app');
+
+
+items.push({
+  name: 'test'
+})
