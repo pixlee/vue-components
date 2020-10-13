@@ -342,9 +342,7 @@ var script$2 = {
   props: {
     items: {
       type: Array,
-      default: function _default() {
-        return [];
-      }
+      default: []
     }
   },
   methods: {
@@ -367,8 +365,8 @@ var __vue_render__$2 = function __vue_render__() {
 
   var _c = _vm._self._c || _h;
 
-  return _c('table', [_vm._ssrNode("<thead data-v-b53a47c8><tr data-v-b53a47c8><th data-v-b53a47c8>Name</th> <th data-v-b53a47c8>Age</th> <th data-v-b53a47c8>Occupation</th></tr></thead> <tbody data-v-b53a47c8>" + (!_vm.items.length ? "<tr data-v-b53a47c8><td colspan=\"3\" data-v-b53a47c8>Nothing to display</td></tr>" : "<!---->") + " " + _vm._ssrList(_vm.items, function (item) {
-    return "<tr data-v-b53a47c8><td data-v-b53a47c8>" + _vm._ssrEscape(_vm._s(item.name)) + "</td> <td data-v-b53a47c8>" + _vm._ssrEscape(_vm._s(item.age)) + "</td> <td data-v-b53a47c8>" + _vm._ssrEscape(_vm._s(item.job)) + "</td></tr>";
+  return _c('table', [_vm._ssrNode("<thead data-v-2aea4b48><tr data-v-2aea4b48><th data-v-2aea4b48>Name</th> <th data-v-2aea4b48>Age</th> <th data-v-2aea4b48>Occupation</th></tr></thead> <tbody data-v-2aea4b48>" + (!_vm.items.length ? "<tr data-v-2aea4b48><td colspan=\"3\" data-v-2aea4b48>Nothing to display</td></tr>" : "<!---->") + " " + _vm._ssrList(_vm.items, function (item) {
+    return "<tr data-v-2aea4b48><td data-v-2aea4b48>" + _vm._ssrEscape(_vm._s(item.name)) + "</td> <td data-v-2aea4b48>" + _vm._ssrEscape(_vm._s(item.age)) + "</td> <td data-v-2aea4b48>" + _vm._ssrEscape(_vm._s(item.job)) + "</td></tr>";
   }) + "</tbody>")]);
 };
 
@@ -377,8 +375,8 @@ var __vue_staticRenderFns__$2 = [];
 
 var __vue_inject_styles__$2 = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-b53a47c8_0", {
-    source: "table[data-v-b53a47c8]{border-collapse:collapse;text-align:center;table-layout:auto;width:100%}thead[data-v-b53a47c8]{color:#fff;background-color:#b7adff}th[data-v-b53a47c8]{padding:1rem .7rem;text-align:center}tr[data-v-b53a47c8]{box-shadow:0 0 1px 0 rgba(0,0,0,.2)}td[data-v-b53a47c8]{padding:1rem .7rem;text-align:center}",
+  inject("data-v-2aea4b48_0", {
+    source: "table[data-v-2aea4b48]{border-collapse:collapse;text-align:center;table-layout:auto;width:100%}thead[data-v-2aea4b48]{color:#fff;background-color:#b7adff}th[data-v-2aea4b48]{padding:1rem .7rem;text-align:center}tr[data-v-2aea4b48]{box-shadow:0 0 1px 0 rgba(0,0,0,.2)}td[data-v-2aea4b48]{padding:1rem .7rem;text-align:center}",
     map: undefined,
     media: undefined
   });
@@ -386,10 +384,10 @@ var __vue_inject_styles__$2 = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__$2 = "data-v-b53a47c8";
+var __vue_scope_id__$2 = "data-v-2aea4b48";
 /* module identifier */
 
-var __vue_module_identifier__$2 = "data-v-b53a47c8";
+var __vue_module_identifier__$2 = "data-v-2aea4b48";
 /* functional template */
 
 var __vue_is_functional_template__$2 = false;
